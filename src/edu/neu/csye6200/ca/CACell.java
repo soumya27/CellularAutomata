@@ -3,6 +3,7 @@ package edu.neu.csye6200.ca;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Objects;
 
 /*
  * This class defines the state of a cell
@@ -90,6 +91,21 @@ public class CACell {
 
     public void setState(int state) {
         this.state = state;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CACell)) return false;
+        CACell caCell = (CACell) o;
+        return getX() == caCell.getX() &&
+                getY() == caCell.getY() &&
+                getState() == caCell.getState();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getX(), getY(), getState());
     }
 
     @Override

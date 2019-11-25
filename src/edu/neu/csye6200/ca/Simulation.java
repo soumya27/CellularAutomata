@@ -35,11 +35,28 @@ public class Simulation extends Thread{
      private void growth() {
          LOGGER.info("Rule : "+ rule);
          LOGGER.info("Generation : "+ generation);
+
          CACrystal caCrystal = new CACrystal();
          CACrystalSet caCrystalSet = new CACrystalSet();
+         CARule caRule;
          caCrystalSet.storeCACrystal(caCrystal);
-         CACell [][]  nextGeneration = caCrystal.getCrystal();
+         CACell [][]  nextGeneration;
+         switch (rule){
+             case "Rule 2":{
+                 caRule = new CARule2();
+                 break;
+             }
+             case "Rule 3":{
+                 caRule = new CARule3();
+                 break;
+             }
+             default:
+             case "Rule 1":{
+                 caRule = new CARule1();
+                 break;
+             }
 
+         }
          LOGGER.info("First gen"); // one cell at center
          caCrystal.setConsiderationCells(CACell.findNeighbors(caCrystal.getSeed(),caCrystal.getCrystal()));
 
@@ -49,7 +66,7 @@ public class Simulation extends Thread{
              for(CACell cell : caCrystal.getConsiderationCells()){
                  considerationList.addAll(CACell.findNeighbors(cell, caCrystal.getCrystal()));
              }
-             nextGeneration = caCrystal.nextGeneration(considerationList,new CARule1(),caCrystalSet.getPreviousCACrystal());
+             nextGeneration = caCrystal.nextGeneration(considerationList, caRule,caCrystalSet.getPreviousCACrystal());
              try {
                  Thread.sleep(1000);
                  queue.put(nextGeneration);

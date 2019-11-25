@@ -96,6 +96,7 @@ public class CAApp
 
 	private void createAndShowGUI()
 	{
+		simulation = new Simulation(queue);
 		panel = new DrawingPanel();
 		OptionsPanel options = new OptionsPanel();
 		JFrame frame = new JFrame(" Cellular Automata Crystal Growth ");
@@ -144,7 +145,6 @@ public class CAApp
 					LOGGER.severe(ex.getMessage());
 				}
 			});
-			simulation = new Simulation(queue);
 			JPanel northPanel = new JPanel();
 			northPanel.setLayout(new FlowLayout());
 

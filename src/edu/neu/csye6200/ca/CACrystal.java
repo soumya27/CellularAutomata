@@ -14,7 +14,7 @@ public class CACrystal {
     private CACell [][] crystal = new CACell[SIZE][SIZE];
     private CACell seed;
 
-    HashSet<CACell> considerationCells;
+    private HashSet<CACell> considerationCells;
 
     /*
      * Default constructor
@@ -48,11 +48,11 @@ public class CACrystal {
         return crystal;
     }
 
-    public void setCrystal(CACell[][] crystal) {
+    void setCrystal(CACell[][] crystal) {
         this.crystal = crystal;
     }
 
-    public CACell getSeed() {
+    CACell getSeed() {
         return seed;
     }
 
@@ -60,15 +60,15 @@ public class CACrystal {
         this.seed = seed;
     }
 
-    public HashSet<CACell> getConsiderationCells() {
+    HashSet<CACell> getConsiderationCells() {
         return considerationCells;
     }
 
-    public void setConsiderationCells(HashSet<CACell> considerationCells) {
+    void setConsiderationCells(HashSet<CACell> considerationCells) {
         this.considerationCells = considerationCells;
     }
 
-    public CACell [][] nextGeneration(HashSet<CACell> considerationCells, CARule rule, CACrystal caCrystal){
+    CACell [][] nextGeneration(HashSet<CACell> considerationCells, CARule rule, CACrystal caCrystal){
         HashSet<CACell> newGeneratedCells = new HashSet<>();
         rule = new CARule1();
         for(CACell cell : considerationCells){
