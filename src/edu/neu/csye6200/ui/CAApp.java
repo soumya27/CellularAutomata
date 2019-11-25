@@ -8,8 +8,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.logging.FileHandler;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 /**********************************
 
@@ -17,34 +22,44 @@ import java.util.concurrent.BlockingQueue;
 
 public class CAApp
 {
-	BlockingQueue<CACell[][]> queue ;
 	//constants and global variables
-	public final static Color COLOURBACK =  Color.WHITE;
-	private final static int EMPTY = 0;
-	public final static int BSIZE = CACrystal.SIZE;
-	private final static int HEXSIZE = 20 ;	//hex size in pixels
-	private final static int BORDERS = 15;
-	private final static int SCRSIZE = HEXSIZE * (BSIZE + 1) + BORDERS*3; //screen size (vertical dimension).
+	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+	private BlockingQueue<CACell[][]> queue ;
+
+	//Hexagon dimension variables for CAApp
+	private final int BSIZE = CACrystal.SIZE;
+	private final int HEXSIZE = 20 ;	//hex size in pixels
+	private final int BORDERS = 15;
+
+	//Color variables for CAApp
+	private final static Color COLOURBACK =  Color.WHITE;
 	final static Color COLOURCELL =  Color.BLACK;
 	final static Color COLOURGRID =  Color.WHITE;
 	final static Color COLOURONE = new Color(32,178,170,200);
 
-	private  JPanel northPanel = null;
+	private Simulation simulation;
+
 	private  JButton startBtn = null;
-	private  JButton stopBtn = null;
 	private JTextField sizeText = null;
 	private JComboBox<String> comboBox = null;
-	DrawingPanel panel;
+	private DrawingPanel panel;
 
+	private CACrystal caCrystal = new CACrystal();
+	private int[][] board = new int[BSIZE][BSIZE];
 
-//	Simulation simulation = new Simulation();
-	CACrystal caCrystal = new CACrystal();
-	int[][] board = new int[BSIZE][BSIZE];
-
-	CACell[][] cells = caCrystal.getCrystal();
+	private CACell[][] cells = caCrystal.getCrystal();
 
 
 	private CAApp(BlockingQueue<CACell[][]> queue) {
+		try{
+			FileHandler fileHandler = new FileHandler("CAApp.log", true);
+			LogManager.getLogManager().reset();
+			SimpleFormatter formatter = new SimpleFormatter();
+			fileHandler.setFormatter(formatter);
+			LOGGER.addHandler(fileHandler);
+		}catch (IOException e){
+			System.out.println("Error while creating FileHandler : "+ e.getMessage());
+		}
 		this.queue = queue;
 		initGame();
 		createAndShowGUI();
@@ -61,7 +76,7 @@ public class CAApp
 				}
 		});
 		UImain.setName("uiprocess");
-		System.out.println(UImain.getName());
+		LOGGER.info(UImain.getName());
 	}
 
 	private void initGame(){
@@ -73,7 +88,8 @@ public class CAApp
 
 		for (int i=0;i<BSIZE;i++) {
 			for (int j=0;j<BSIZE;j++) {
-				board[i][j]=EMPTY;
+				int EMPTY = 0;
+				board[i][j]= EMPTY;
 			}
 		}
 	}
@@ -90,33 +106,46 @@ public class CAApp
 		content.add(options.getNorthPanel(),BorderLayout.NORTH);
 		content.add(jScrollPane);
 
-		frame.setSize( (int)(SCRSIZE/1.23), SCRSIZE);
+		//screen size (vertical dimension).
+		int SCRSIZE = HEXSIZE * (BSIZE + 1) + BORDERS * 3;
+		frame.setSize( (int)(SCRSIZE /1.23), SCRSIZE);
 		frame.setResizable(true);
 		frame.setLocationRelativeTo( null );
 		frame.setVisible(true);
 	}
 
+
+	public CACell[][] getCells() {
+		return cells;
+	}
+
+	private void setCells(CACell[][] cells) {
+		this.cells = cells;
+	}
+
+
 	class OptionsPanel extends JPanel {
 
 		Timer timer ;
-		public OptionsPanel(){
+
+		OptionsPanel(){
 			setBackground(COLOURBACK);
 		}
 
-		public JPanel getNorthPanel() {
-			timer = new Timer(10, new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					try {
-						System.out.println("print from start button");
+		JPanel getNorthPanel() {
+			timer = new Timer(10, e -> {
+				try {
+					while (!queue.isEmpty()){
 						setCells(queue.take());
+						Thread.sleep(100);
 						panel.repaint();
-					} catch (InterruptedException ex) {
-						System.out.println(ex.getMessage());
 					}
+				} catch (InterruptedException ex) {
+					LOGGER.severe(ex.getMessage());
 				}
-		});
-			northPanel = new JPanel();
+			});
+			simulation = new Simulation(queue);
+			JPanel northPanel = new JPanel();
 			northPanel.setLayout(new FlowLayout());
 
 			startBtn = new JButton("Start");
@@ -124,18 +153,38 @@ public class CAApp
 
 			northPanel.add(startBtn);
 
-			stopBtn = new JButton("Stop");
+			JButton stopBtn = new JButton("Stop");
 			stopBtn.addActionListener(new StopListener());
 			northPanel.add(stopBtn);
 
 			northPanel.add(new JLabel("Max Duration: "));
 			sizeText = new JTextField(5);
+			sizeText.setText("0");
+			sizeText.addActionListener(e -> {
+				if(simulation.isAlive()) {
+					try {
+						simulation.join();
+					} catch (InterruptedException ex) {
+						LOGGER.severe(ex.getMessage());
+					}
+				}
+			});
 			northPanel.add(sizeText);
 
 			comboBox = new JComboBox<>();
-			comboBox.addItem("Rule1");
-			comboBox.addItem("Rule2");
-			comboBox.addItem("Rule3");
+			comboBox.addItem("Rule 1");
+			comboBox.addItem("Rule 2");
+			comboBox.addItem("Rule 3");
+			comboBox.addActionListener(e -> {
+				if(simulation.isAlive()) {
+					try {
+						System.out.println("alive");
+						simulation.join();
+					} catch (InterruptedException ex) {
+						LOGGER.severe(ex.getMessage());
+					}
+				}
+			});
 			northPanel.add(new JLabel("Options: "));
 			northPanel.add(comboBox);
 			return northPanel;
@@ -143,21 +192,24 @@ public class CAApp
 
 		class StartListener implements ActionListener {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(sizeText.getText());
-				System.out.println(comboBox.getSelectedItem());
+				LOGGER.info("Max duration : "+sizeText.getText());
+				simulation.setRule(comboBox.getSelectedItem().toString());
+				LOGGER.info("Rules: "+ comboBox.getSelectedItem());
+				simulation.setGeneration(Integer.parseInt(sizeText.getText()));
 				startBtn.setEnabled(false);
 				sizeText.setEnabled(false);
 				comboBox.setEnabled(false);
-				System.out.println("start clicked");
-				Simulation simulation = new Simulation(queue);
-				simulation.start();
+				LOGGER.info("start clicked");
+				if(!simulation.isAlive())
+					simulation.start();
 				timer.start();
 			}
 		}
 
 		class StopListener implements ActionListener {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("stopping");
+				LOGGER.info("stop button clicked");
+				simulation.interrupt();
 				timer.stop();
 				startBtn.setEnabled(true);
 				sizeText.setEnabled(true);
@@ -165,15 +217,6 @@ public class CAApp
 			}
 		}
 	}
-
-	public CACell[][] getCells() {
-		return cells;
-	}
-
-	public void setCells(CACell[][] cells) {
-		this.cells = cells;
-	}
-
 
 	class DrawingPanel extends JPanel
 	{
@@ -199,4 +242,5 @@ public class CAApp
 			}
 		}
 	}
+
 }

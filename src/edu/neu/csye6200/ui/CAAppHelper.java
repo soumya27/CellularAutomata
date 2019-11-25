@@ -34,7 +34,7 @@ public class CAAppHelper
 		h=2*r;
 	}
 	public static void setHeight(int height) {
-		h = height;			// h = basic dimension: height (distance between two adj centresr aka size)
+		h = height;			// h = basic dimension: height (distance between two adj centers aka size)
 		r = h/2;			// r = radius of inscribed circle
 		s = (int) (h / 1.73205);	// s = (h/2)/cos(30)= (h/2) / (sqrt(3)/2) = h / sqrt(3)
 		t = (int) (r / 1.73205);	// t = (h/2) tan30 = (h/2) 1/sqrt(3) = h / (2 sqrt(3)) = r / sqrt(3)
@@ -73,12 +73,12 @@ public class CAAppHelper
 
 	/********************************************************************
 	Name		:drawHex()
-	Parameters	: (i,j) : the x,y coordinates of the inital point of the hexagon
+	Parameters	: (i,j) : the x,y coordinates of the initial point of the hexagon
 	 g2			: the Graphics2D object to draw on.
 	Returns		: void
 	Calls		: hex()
 	Purpose		: This function draws a hexagon based on the initial point (x,y).
-				  The hexagon is drawn in the colour specified in hexgame.COLOURELL.
+				  The hexagon is drawn in the colour specified in CAApp.COLOURCELL.
 	*********************************************************************/
 	public static void drawHex(int i, int j, Graphics2D g2) {
 		int x = i * (s + t);
@@ -100,8 +100,8 @@ public class CAAppHelper
 	* Called from:
 	* Calls: hex()
 	*Purpose: This draws a filled in polygon based on the coordinates of the hexagon.
-		  The colour depends on whether n is negative or positive.
-		  The colour is set by hexgame.COLOURONE and hexgame.COLOURTWO.
+		  The colour depends on whether n is 1 or 0.
+		  The colour is set by CAApp.COLOURONE
 		  The value of n is converted to letter and drawn in the hexagon.
 	*****************************************************************************/
 	public static void fillHex(int i, int j, int n, Graphics2D g2) {

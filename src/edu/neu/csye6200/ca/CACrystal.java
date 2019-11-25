@@ -43,12 +43,11 @@ public class CACrystal {
         }
     }
 
-    // Getter
+    // Getter and Setters
     public CACell[][] getCrystal() {
         return crystal;
     }
 
-    // Setter
     public void setCrystal(CACell[][] crystal) {
         this.crystal = crystal;
     }
