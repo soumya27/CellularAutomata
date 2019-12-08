@@ -14,8 +14,11 @@ public class CARule2 implements CARule {
         for (CACell cell : neighbors){
             sum += cell.getState();
         }
-        if(sum == 1 || sum == 2){
+        if(sum == 1 ){
             current.setState(1);
+        }
+        else if ( sum == 2 ||sum == 3 || sum == 6){
+            current.setState(0);
         }
         return current;
     }

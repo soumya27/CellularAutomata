@@ -14,7 +14,7 @@ public class CARule1 implements CARule {
         for (CACell cell : neighbors){
             sum += cell.getState();
         }
-        if(sum == 1 || sum==3){
+        if(sum == 1 ){
             current.setState(1);
         }
         return current;

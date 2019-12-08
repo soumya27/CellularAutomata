@@ -1,7 +1,5 @@
 package edu.neu.csye6200.ca;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Objects;
 
@@ -15,17 +13,7 @@ public class CACell {
     private int y; // y co-ordinated on the Crystal grid
     private int state; // State can be frozen (denoted by 1) or not (Denoted by 0)
 
-    /*
-     * Default Constructor
-     */
-    public CACell()
-    {
-        x = 0;
-        y = 0;
-        state = 0;
-    }
-
-    public CACell(CACell cell){
+    private CACell(CACell cell){
         this.x = cell.getX();
         this.y = cell.getY();
         this.state = cell.getState();
@@ -34,7 +22,7 @@ public class CACell {
     /*
      * Parameterised Constructor
      */
-    public CACell(int x, int y, int state)
+    CACell(int x, int y, int state)
     {
         this.x = x;
         this.y = y;
@@ -44,55 +32,48 @@ public class CACell {
     /*
      * Method to find the neighboring cells for a given cell
      */
-    public static HashSet<CACell> findNeighbors(CACell current, CACell[][] crystal){
-//        System.out.println("Cell [ "+current.getX()+","+current.getY()+" ]");
+    static HashSet<CACell> findNeighbors(CACell current, CACell[][] crystal){
         HashSet<CACell> neighbors = new HashSet<>();
-        if(current.getX()%2 ==0) { //even
-            neighbors.add(new CACell(crystal[current.getX()][current.getY() + 1]));
-            neighbors.add(new CACell(crystal[current.getX()][current.getY() - 1]));
-            neighbors.add(new CACell(crystal[current.getX() - 1][current.getY() - 1]));
-            neighbors.add(new CACell(crystal[current.getX() - 1][current.getY()]));
-            neighbors.add(new CACell(crystal[current.getX() + 1][current.getY() - 1]));
-            neighbors.add(new CACell(crystal[current.getX() + 1][current.getY()]));
-        } else { //odd
-            neighbors.add(new CACell(crystal[current.getX()][current.getY() + 1]));
-            neighbors.add(new CACell(crystal[current.getX()][current.getY() - 1]));
-            neighbors.add(new CACell(crystal[current.getX() - 1][current.getY() +1]));
-            neighbors.add(new CACell(crystal[current.getX() - 1][current.getY()]));
-            neighbors.add(new CACell(crystal[current.getX() + 1][current.getY() +1]));
-            neighbors.add(new CACell(crystal[current.getX() + 1][current.getY()]));
+        int x = current.getX();
+        int y = current.getY();
+        if( x < CACrystal.SIZE -1 && y < CACrystal.SIZE-1 && x > 1 && y > 1){ // exit conditions
+            neighbors.add(new CACell(crystal[x][y + 1]));
+            neighbors.add(new CACell(crystal[x][y - 1]));
+            neighbors.add(new CACell(crystal[x - 1][y]));
+            neighbors.add(new CACell(crystal[x + 1][y]));
+            if(x%2 ==0) { //even
+                neighbors.add(new CACell(crystal[x - 1][y - 1]));
+                neighbors.add(new CACell(crystal[x + 1][y - 1]));
+            } else { //odd
+                neighbors.add(new CACell(crystal[x - 1][y + 1]));
+                neighbors.add(new CACell(crystal[x + 1][y +1 ]));
+            }
         }
-//        System.out.println(Arrays.toString(neighbors.toArray()));
         return neighbors;
     }
 
     /*
      * Getters and Setters for the class variables
      */
-    public int getX() {
+    int getX() {
         return x;
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
+    int getY() {
         return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
     }
 
     public int getState() {
         return state;
     }
 
-    public void setState(int state) {
+    void setState(int state) {
         this.state = state;
     }
 
+    /*
+     * Overriding the equals() and hashCode() to help comparing two CACells
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -108,6 +89,9 @@ public class CACell {
         return Objects.hash(getX(), getY(), getState());
     }
 
+    /*
+     * Overriding the toString() to print CACells in the form (x,y,state)
+     */
     @Override
     public String toString() {
         return "( " + x +

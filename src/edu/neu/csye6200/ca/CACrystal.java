@@ -7,18 +7,12 @@ import java.util.HashSet;
  */
 public class CACrystal {
 
-
     public static final int SIZE = 40;
-
-
-    private CACell [][] crystal = new CACell[SIZE][SIZE];
     private CACell seed;
-
+    private CACell [][] crystal = new CACell[SIZE][SIZE];
     private HashSet<CACell> considerationCells;
 
-    /*
-     * Default constructor
-     */
+    // Default constructor
     public CACrystal(){
         //set seed location at (SIZE/2,SIZE/2)
         considerationCells = new HashSet<>();
@@ -32,45 +26,13 @@ public class CACrystal {
     }
 
     /*
-     * Method to print the Crystal 2D array
+     * Method will consider each CACell from the considerationCell HashSe and
+     * the previous generation CACrystal caCrystal,
+     * apply the CARule rule on it to form the new generation
+     * which is returned as crystal
      */
-    public void printCrystalStates(CACell [][] crystal){
-        for (int i =0; i<SIZE; i++){
-            for(int j =0;j<SIZE;j++){
-                System.out.print(crystal[i][j].getState() + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    // Getter and Setters
-    public CACell[][] getCrystal() {
-        return crystal;
-    }
-
-    void setCrystal(CACell[][] crystal) {
-        this.crystal = crystal;
-    }
-
-    CACell getSeed() {
-        return seed;
-    }
-
-    public void setSeed(CACell seed) {
-        this.seed = seed;
-    }
-
-    HashSet<CACell> getConsiderationCells() {
-        return considerationCells;
-    }
-
-    void setConsiderationCells(HashSet<CACell> considerationCells) {
-        this.considerationCells = considerationCells;
-    }
-
     CACell [][] nextGeneration(HashSet<CACell> considerationCells, CARule rule, CACrystal caCrystal){
         HashSet<CACell> newGeneratedCells = new HashSet<>();
-        rule = new CARule1();
         for(CACell cell : considerationCells){
             cell = rule.applyRule(cell, caCrystal.getCrystal());
             if(cell.getState()==1){
@@ -83,6 +45,31 @@ public class CACrystal {
             caCrystal.getCrystal()[cell.getX()][cell.getY()]=cell;
         }
         return crystal;
+    }
+
+    /*
+     * Getter and setter for crystal variable
+     */
+    public CACell[][] getCrystal() {
+        return crystal;
+    }
+
+    /*
+     * Method will return the center cell ( which will be the seed for the crystal growth )
+     */
+    CACell getSeed() {
+        return seed;
+    }
+
+    /*
+     * Getter and setter for considerationCells variable
+     */
+    HashSet<CACell> getConsiderationCells() {
+        return considerationCells;
+    }
+
+    void setConsiderationCells(HashSet<CACell> considerationCells) {
+        this.considerationCells = considerationCells;
     }
 
 }

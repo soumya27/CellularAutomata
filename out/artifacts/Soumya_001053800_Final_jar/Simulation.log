@@ -1,0 +1,446 @@
+Nov 30, 2019 10:10:17 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 12
+Nov 30, 2019 10:10:17 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:10:17 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Nov 30, 2019 10:10:17 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:10:17 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Nov 30, 2019 10:10:17 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 12
+Nov 30, 2019 10:10:17 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Nov 30, 2019 10:10:18 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Nov 30, 2019 10:10:19 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Nov 30, 2019 10:10:20 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Nov 30, 2019 10:10:21 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Nov 30, 2019 10:10:22 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Nov 30, 2019 10:10:23 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Nov 30, 2019 10:10:24 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Nov 30, 2019 10:10:25 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 10th gen
+Nov 30, 2019 10:10:26 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 11th gen
+Nov 30, 2019 10:10:27 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 12th gen
+Nov 30, 2019 10:10:28 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 13th gen
+Nov 30, 2019 10:10:29 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Nov 30, 2019 10:10:29 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 12
+Nov 30, 2019 10:10:29 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Nov 30, 2019 10:10:30 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:10:30 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Nov 30, 2019 10:10:31 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Nov 30, 2019 10:10:32 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Nov 30, 2019 10:10:33 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 12
+Nov 30, 2019 10:10:33 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:10:33 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:10:33 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Nov 30, 2019 10:10:34 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Nov 30, 2019 10:10:35 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Nov 30, 2019 10:10:36 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:10:36 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Nov 30, 2019 10:15:57 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 14
+Nov 30, 2019 10:15:57 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:15:57 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Nov 30, 2019 10:15:57 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:15:57 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Nov 30, 2019 10:15:57 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 14
+Nov 30, 2019 10:15:57 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Nov 30, 2019 10:15:58 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Nov 30, 2019 10:15:59 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Nov 30, 2019 10:16:00 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Nov 30, 2019 10:16:01 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Nov 30, 2019 10:16:02 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Nov 30, 2019 10:16:02 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:16:03 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Nov 30, 2019 10:16:04 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Nov 30, 2019 10:16:05 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 10th gen
+Nov 30, 2019 10:16:06 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 11th gen
+Nov 30, 2019 10:16:07 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 12th gen
+Nov 30, 2019 10:16:08 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 13th gen
+Nov 30, 2019 10:16:09 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 14th gen
+Nov 30, 2019 10:16:10 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 15th gen
+Nov 30, 2019 10:16:11 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Nov 30, 2019 10:16:16 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 14
+Nov 30, 2019 10:16:16 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:16:16 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Nov 30, 2019 10:16:16 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:16:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Nov 30, 2019 10:16:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 14
+Nov 30, 2019 10:16:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Nov 30, 2019 10:16:17 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Nov 30, 2019 10:16:18 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Nov 30, 2019 10:16:19 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Nov 30, 2019 10:16:20 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Nov 30, 2019 10:16:20 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:16:21 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Nov 30, 2019 10:16:22 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Nov 30, 2019 10:16:22 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 14
+Nov 30, 2019 10:16:22 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:16:22 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:16:23 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Nov 30, 2019 10:16:24 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 10th gen
+Nov 30, 2019 10:16:25 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 11th gen
+Nov 30, 2019 10:16:26 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 12th gen
+Nov 30, 2019 10:16:27 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 13th gen
+Nov 30, 2019 10:16:28 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 14th gen
+Nov 30, 2019 10:16:29 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 15th gen
+Nov 30, 2019 10:16:30 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Nov 30, 2019 10:16:37 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:19:41 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 14
+Nov 30, 2019 10:19:41 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:19:41 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Nov 30, 2019 10:19:41 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Nov 30, 2019 10:19:41 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:19:44 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:19:45 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 14
+Nov 30, 2019 10:19:45 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:19:45 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Nov 30, 2019 10:19:45 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:19:45 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Nov 30, 2019 10:19:47 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:20:10 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 14
+Nov 30, 2019 10:20:10 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:20:10 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Nov 30, 2019 10:20:10 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:20:10 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Nov 30, 2019 10:20:10 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 14
+Nov 30, 2019 10:20:10 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Nov 30, 2019 10:20:11 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Nov 30, 2019 10:20:11 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:20:12 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Nov 30, 2019 10:20:13 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Nov 30, 2019 10:20:14 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Nov 30, 2019 10:20:15 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Nov 30, 2019 10:20:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Nov 30, 2019 10:20:17 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 14
+Nov 30, 2019 10:20:17 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Nov 30, 2019 10:20:17 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start clicked
+Nov 30, 2019 10:20:17 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Nov 30, 2019 10:20:18 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 10th gen
+Nov 30, 2019 10:20:19 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 11th gen
+Nov 30, 2019 10:20:20 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Nov 30, 2019 10:20:20 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 12th gen
+Nov 30, 2019 10:20:21 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 13th gen
+Nov 30, 2019 10:20:22 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 14th gen
+Nov 30, 2019 10:20:23 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 15th gen
+Nov 30, 2019 10:20:24 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Dec 01, 2019 5:55:07 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 16
+Dec 01, 2019 5:55:07 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 3
+Dec 01, 2019 5:55:07 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Dec 01, 2019 5:55:07 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start button clicked
+Dec 01, 2019 5:55:07 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 3
+Dec 01, 2019 5:55:07 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 16
+Dec 01, 2019 5:55:07 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 1th gen
+Dec 01, 2019 5:55:08 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Dec 01, 2019 5:55:09 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Dec 01, 2019 5:55:10 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Dec 01, 2019 5:55:11 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Dec 01, 2019 5:55:12 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Dec 01, 2019 5:55:13 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Dec 01, 2019 5:55:14 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Dec 01, 2019 5:55:15 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Dec 01, 2019 5:55:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 10th gen
+Dec 01, 2019 5:55:17 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 11th gen
+Dec 01, 2019 5:55:18 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 12th gen
+Dec 01, 2019 5:55:19 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 13th gen
+Dec 01, 2019 5:55:20 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 14th gen
+Dec 01, 2019 5:55:21 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 15th gen
+Dec 01, 2019 5:55:22 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 16th gen
+Dec 01, 2019 5:55:23 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 3
+Dec 01, 2019 5:55:23 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 16
+Dec 01, 2019 5:55:23 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 1th gen
+Dec 01, 2019 5:55:24 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Dec 01, 2019 5:55:25 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Dec 01, 2019 5:55:26 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Dec 01, 2019 5:55:27 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Dec 01, 2019 5:55:28 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Dec 01, 2019 5:55:28 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Dec 01, 2019 5:55:34 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 16
+Dec 01, 2019 5:55:34 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Dec 01, 2019 5:55:34 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Dec 01, 2019 5:55:34 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Dec 01, 2019 5:55:34 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start button clicked
+Dec 01, 2019 5:55:34 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 16
+Dec 01, 2019 5:55:34 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 1th gen
+Dec 01, 2019 5:55:35 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Dec 01, 2019 5:55:36 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Dec 01, 2019 5:55:37 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Dec 01, 2019 5:55:38 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Dec 01, 2019 5:55:39 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Dec 01, 2019 5:55:40 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Dec 01, 2019 5:55:41 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Dec 01, 2019 5:55:42 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Dec 01, 2019 5:55:43 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 10th gen
+Dec 01, 2019 5:55:44 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Dec 01, 2019 5:55:44 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Dec 03, 2019 8:51:46 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 12
+Dec 03, 2019 8:51:46 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 1
+Dec 03, 2019 8:51:46 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Dec 03, 2019 8:51:46 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start button clicked
+Dec 03, 2019 8:51:46 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Dec 03, 2019 8:51:46 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 12
+Dec 03, 2019 8:51:46 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 1th gen
+Dec 03, 2019 8:51:47 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Dec 03, 2019 8:51:48 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Dec 03, 2019 8:51:49 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Dec 03, 2019 8:51:50 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Dec 03, 2019 8:51:51 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Dec 03, 2019 8:51:52 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Dec 03, 2019 8:51:53 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Dec 03, 2019 8:51:54 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 9th gen
+Dec 03, 2019 8:51:55 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 10th gen
+Dec 03, 2019 8:51:56 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 11th gen
+Dec 03, 2019 8:51:57 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 12th gen
+Dec 03, 2019 8:51:58 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 1
+Dec 03, 2019 8:51:58 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 12
+Dec 03, 2019 8:51:58 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 1th gen
+Dec 03, 2019 8:51:59 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Dec 03, 2019 8:52:00 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Dec 03, 2019 8:52:00 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Dec 03, 2019 8:52:05 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 12
+Dec 03, 2019 8:52:05 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 2
+Dec 03, 2019 8:52:05 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Dec 03, 2019 8:52:05 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 2
+Dec 03, 2019 8:52:05 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 12
+Dec 03, 2019 8:52:05 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start button clicked
+Dec 03, 2019 8:52:05 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 1th gen
+Dec 03, 2019 8:52:06 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Dec 03, 2019 8:52:07 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Dec 03, 2019 8:52:08 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Dec 03, 2019 8:52:09 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Dec 03, 2019 8:52:10 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Dec 03, 2019 8:52:11 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Dec 03, 2019 8:52:12 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 8th gen
+Dec 03, 2019 8:52:13 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Dec 03, 2019 8:52:13 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
+Dec 03, 2019 8:52:16 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Max duration : 12
+Dec 03, 2019 8:52:16 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: Rules: Rule 3
+Dec 03, 2019 8:52:16 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread started
+Dec 03, 2019 8:52:16 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$1
+INFO: start button clicked
+Dec 03, 2019 8:52:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Rule : Rule 3
+Dec 03, 2019 8:52:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: Generation : 12
+Dec 03, 2019 8:52:16 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 1th gen
+Dec 03, 2019 8:52:17 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 2th gen
+Dec 03, 2019 8:52:18 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 3th gen
+Dec 03, 2019 8:52:19 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 4th gen
+Dec 03, 2019 8:52:20 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 5th gen
+Dec 03, 2019 8:52:21 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 6th gen
+Dec 03, 2019 8:52:22 PM edu.neu.csye6200.ca.Simulation growth
+INFO: 7th gen
+Dec 03, 2019 8:52:22 PM edu.neu.csye6200.ui.CAApp lambda$getNorthPanel$2
+INFO: stop button clicked
+Dec 03, 2019 8:52:23 PM edu.neu.csye6200.ca.Simulation run
+INFO: Simulation thread stopped
