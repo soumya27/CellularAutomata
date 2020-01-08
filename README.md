@@ -15,7 +15,17 @@ User Interface application :
 
 
 ### Quick Look
+Application Look
+![Image of Application](./out/Image.png)
 
+Rule1 Simulation
+![Image of Rule1](./out/Image1.png)
+
+Rule2 Simulation
+![Image of Rule2](./out/Image2.png)
+
+Rule3 Simulation
+![Image of Rule3](./out/Image3.png)
 
 ### Author
 * **Soumya Cherukupalli**
